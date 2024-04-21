@@ -12,6 +12,7 @@
     max-width: 800px; /* Limit width for better readability */
     width: 100%; /* Take full width of the container */
     padding: 20px;
+    margin-top: 150px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a shadow for visual depth */
   }
   
