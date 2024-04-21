@@ -1,0 +1,38 @@
+/* Navbar.css */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for the navbar */
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin-right: 15px; /* Adjust spacing between nav items */
+}
+
+/* Style for links */
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Style for My Bag button */
+.my-bag-button {
+  background-color: #2A4BA0; /* Blue color, you can change it */
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}

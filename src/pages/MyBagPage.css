@@ -1,0 +1,114 @@
+/* MyBagPage.css */
+
+/* Container styles */
+.my-bag-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .product-list-container {
+    flex: 1;
+  }
+  
+  .pricing-details {
+    width: 30%;
+    padding: 50px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin-top: 25px;
+  }
+  
+  /* Product item styles */
+  .product-item-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .product-item-container img {
+    width: 145px;
+    height: 125px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-details-container {
+    flex: 1;
+  }
+  
+  .item-controls-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-btn {
+    margin-right: 5px;
+    background-color: #2A4BA0;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .quantity-btn:hover {
+    background-color: #2A4BA0;
+  }
+  
+  .remove-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .remove-btn:hover {
+    background-color: #c82333;
+  }
+  
+  /* Checkout buttons */
+  .checkout-buttons-container {
+    margin: 20px;
+  }
+
+  .quantity-text {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .checkout-buttons-container a,
+  .checkout-buttons-container button {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #2A4BA0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .checkout-buttons-container a:hover,
+  .checkout-buttons-container button:hover {
+    background-color: #2A4BA0;
+  }
+
+  
+  /* Other styles remain the same */
+  
+  /* Media Query for Small Screens */
+  @media (max-width: 768px) {
+    .my-bag-container {
+      flex-direction: column; /* Stack product details vertically */
+    }
+    .pricing-details {
+        width: 70%;
+      }
+  }
+  

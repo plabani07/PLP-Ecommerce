@@ -1,0 +1,117 @@
+/* ProductListPage.css */
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  
+  .product-item {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    position: relative; /* Add position relative for absolute positioning */
+    overflow: hidden; /* Hide overflowing content */
+  }
+  
+  .product-item img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+  }
+  
+  .product-item:hover img {
+    transform: scale(1.1); /* Scale up image on hover */
+  }
+  
+  .product-item .price {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* Add transition for smooth color change */
+  }
+  
+  .product-item a {
+    font-size: 1rem;
+    font-family: Avenir-NextBold;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0 0 5px;
+    text-decoration: none;
+  }
+  
+  .product-item a:hover {
+    color: #e67e22; /* Change color on hover */
+  }
+  
+  /* Example of changing price text on hover */
+  .product-item:hover .price {
+    color: #e67e22; /* Change price text color on hover */
+  }
+  
+  .search-container {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    width: 250px;
+    height: 20px;
+    border-radius: 20px;
+  }
+  
+  .search-button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 19px;
+    cursor: pointer;
+    height: 38px;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+
+  .loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Ensure it's above other content */
+  }
+  
+  .spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3); /* Light border color */
+    border-top: 4px solid #ffffff; /* White border color */
+    border-radius: 50%;
+    width: 40px; /* Spinner size */
+    height: 40px;
+    animation: spin 0.8s linear infinite; /* Rotation animation */
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  
+  
